@@ -37,7 +37,7 @@ router.post('/',async(req,res)=>{
 	} catch(err){
 		res.render('authors/new.ejs',{
 			author: author,
-			message: 'Error creating author'
+			errorMessage: 'Error creating author'
 		});
 	}
 })
